@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "monadmcp": {
+      "command": "npx ts-node C:/Users/9sept/monadmcp/src/index.ts"
+    }
+  }
+}
