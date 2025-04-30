@@ -1,3 +1,4 @@
+
 # MonadMCP
 
 An open-source MCP server for interacting with Monad Testnet, compatible with Claude Desktop and Cursor IDE.
@@ -13,16 +14,15 @@ An open-source MCP server for interacting with Monad Testnet, compatible with Cl
 1. Clone the repo: `git clone https://github.com/xRafay/MonadMCP`
 2. Run setup: `chmod +x setup.sh && ./setup.sh`
 3. Edit `.env` with your credentials.
-4. Start the server: `npx ts-node src/index.ts`
+4. Start the server: `npx ts-node --require tsconfig-paths/register src/index.ts`
 
-## Claude Desktop Setup
-Edit `~/Library/Application Support/Claude/claude_desktop_config.json`:
-```json
+## Cursor Desktop Setup
+
 {
   "mcpServers": {
     "monadmcp": {
-      "command": "npx",
-      "args": ["ts-node", "/path/to/monadmcp/src/index.ts"]
+      "command": "npx ts-node C:/Users/9sept/monadmcp/src/index.ts"
     }
   }
 }
+
